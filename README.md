@@ -1,4 +1,9 @@
-# faleiroqa - Repositório de conteúdos do canal
+# [CRIANDO DATABASE SQL SERVER COM DOCKER E LINUX - SOMENTE CLI](https://youtu.be/IL-lfihmfw4?si=Gt5DORx6nySGZyma)
 
-## Navegação
-O nome de cada branch corresponde ao nome do video no youtube substituindo " "  por "-" e contém o conteúdo utilizado na apresentação
+## Objetivos
+ - Iniciar uma base de dados utilizando a imagem docker oficial do SQL SERVER MICROSOFT;
+ - Conectar-se à base de dados utilizando um SGBD a partir de outra máquina na rede;
+
+## Comandos apresentados durante o vídeo
+- ```docker image ls```
+
