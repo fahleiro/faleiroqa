@@ -17,4 +17,35 @@
   }else{
     document.querySelectorAll('.reveal').forEach((el)=> el.classList.add('is-visible'));
   }
+
+  // Simple router
+  const pages = Array.from(document.querySelectorAll('.page'));
+  function showPage(name){
+    pages.forEach((p)=>{
+      const isActive = p.dataset.page === name;
+      p.classList.toggle('page--active', isActive);
+    });
+  }
+
+  function getInitialRoute(){
+    const hash = (location.hash || '').replace('#','');
+    if(hash && pages.some(p=>p.dataset.page===hash)) return hash;
+    return 'home';
+  }
+
+  function navigate(name){
+    if(!name) return;
+    history.replaceState({}, '', `#${name}`);
+    showPage(name);
+  }
+
+  document.addEventListener('click', (e)=>{
+    const link = e.target.closest('[data-route]');
+    if(!link) return;
+    const route = link.getAttribute('data-route');
+    if(route){ e.preventDefault(); navigate(route); }
+  });
+
+  // init
+  navigate(getInitialRoute());
 })();

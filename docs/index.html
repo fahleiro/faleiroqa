@@ -18,28 +18,28 @@
   <div class="decorative-glow glow-bottom"></div>
 
   <header class="site-header">
-    <a class="brand" href="#top">Faleiro QA</a>
+    <a class="brand" href="#" data-route="home">Faleiro QA</a>
     <nav class="nav">
-      <a href="#expertise">Expertise</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
+      <a href="#" data-route="expertise">Expertise</a>
+      <a href="#" data-route="projetos">Projetos</a>
+      <a href="#" data-route="contato">Contato</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero" aria-label="Apresentação">
+    <section class="hero page page--active" data-page="home" aria-label="Apresentação">
       <h1 class="hero__title">
         Gabriel Reinisch Faleiro
         <span class="hero__subtitle">QA Engineer</span>
       </h1>
       <p class="hero__tagline">Qualidade de ponta a ponta com automação, observabilidade e entrega confiável.</p>
       <div class="hero__ctas">
-        <a class="button button--primary" href="#contato">Falar comigo</a>
+        <a class="button button--primary" href="#contato" data-route="contato">Falar comigo</a>
         <a class="button button--ghost" href="https://github.com/fahleiro" target="_blank" rel="noopener">GitHub</a>
       </div>
     </section>
 
-    <section id="expertise" class="section section--padded" aria-label="Expertise">
+    <section id="expertise" class="section section--padded page" data-page="expertise" aria-label="Expertise">
       <h2 class="section__title">Expertise</h2>
       <div class="grid">
         <article class="card reveal">
@@ -69,7 +69,7 @@
       </div>
     </section>
 
-    <section id="projetos" class="section section--padded" aria-label="Projetos e Resultados">
+    <section id="projetos" class="section section--padded page" data-page="projetos" aria-label="Projetos e Resultados">
       <h2 class="section__title">Projetos e Resultados</h2>
       <div class="grid">
         <article class="card reveal">
@@ -87,7 +87,7 @@
       </div>
     </section>
 
-    <section id="contato" class="section section--padded" aria-label="Contato">
+    <section id="contato" class="section section--padded page" data-page="contato" aria-label="Contato">
       <h2 class="section__title">Vamos conversar</h2>
       <p class="muted">Entre em contato para falarmos sobre qualidade, automação e como elevar a confiança na entrega.</p>
       <div class="cta-row">
