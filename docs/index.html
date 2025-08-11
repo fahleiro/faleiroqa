@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Faleiro QA</title>
-  <meta name="description" content="QA Engineer com foco em automação, qualidade de ponta a ponta e entrega confiável." />
+  <meta name="description" data-i18n-meta="description" content="QA Engineer com foco em automação, qualidade de ponta a ponta e entrega confiável." />
   <meta name="theme-color" content="#000000" />
   <meta property="og:title" content="Gabriel Reinisch Faleiro — QA Engineer" />
-  <meta property="og:description" content="Automação de testes, API testing, CI/CD e qualidade de ponta a ponta." />
+  <meta property="og:description" data-i18n-meta="ogDescription" content="Automação de testes, API testing, CI/CD e qualidade de ponta a ponta." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="" />
   <link rel="preload" href="styles.css" as="style" />
@@ -17,14 +17,7 @@
   <div class="decorative-glow glow-top"></div>
   <div class="decorative-glow glow-bottom"></div>
 
-  <header class="site-header">
-    <a class="brand" href="#" data-route="home">Faleiro QA</a>
-    <nav class="nav">
-      <a href="#" data-route="expertise">Expertise</a>
-      <a href="#" data-route="projetos">Projetos</a>
-      <a href="#" data-route="contato">Contato</a>
-    </nav>
-  </header>
+  <header class="site-header" id="site-header"></header>
 
   <main id="top">
     <section class="hero page page--active" data-page="home" aria-label="Apresentação">
@@ -32,64 +25,64 @@
         Gabriel Reinisch Faleiro
         <span class="hero__subtitle">QA Engineer</span>
       </h1>
-      <p class="hero__tagline">Qualidade de ponta a ponta com automação, observabilidade e entrega confiável.</p>
+      <p class="hero__tagline" data-i18n="hero.tagline">Qualidade de ponta a ponta com automação, observabilidade e entrega confiável.</p>
       <div class="hero__ctas">
-        <a class="button button--primary" href="#contato" data-route="contato">Falar comigo</a>
+        <a class="button button--primary" href="#contato" data-route="contato" data-i18n="cta.contact">Falar comigo</a>
         <a class="button button--ghost" href="https://github.com/fahleiro" target="_blank" rel="noopener">GitHub</a>
       </div>
     </section>
 
     <section id="expertise" class="section section--padded page" data-page="expertise" aria-label="Expertise">
-      <h2 class="section__title">Expertise</h2>
+      <h2 class="section__title" data-i18n="sections.expertise">Expertise</h2>
       <div class="grid">
         <article class="card reveal">
-          <h3>Automação de Testes</h3>
-          <p>Web/Mobile com foco em estabilidade e manutenção: Playwright, Cypress, Selenium.</p>
+          <h3 data-i18n="cards.automation.title">Automação de Testes</h3>
+          <p data-i18n="cards.automation.text">Web/Mobile com foco em estabilidade e manutenção: Playwright, Cypress, Selenium.</p>
         </article>
         <article class="card reveal">
-          <h3>API Testing</h3>
-          <p>Validação de contratos, cenários de erro e resiliência. Postman, REST Assured, Playwright API.</p>
+          <h3 data-i18n="cards.api.title">API Testing</h3>
+          <p data-i18n="cards.api.text">Validação de contratos, cenários de erro e resiliência. Postman, REST Assured, Playwright API.</p>
         </article>
         <article class="card reveal">
-          <h3>CI/CD e QA Gates</h3>
-          <p>Integração com pipelines, testes por PR, ambientes efêmeros e métricas de qualidade.</p>
+          <h3 data-i18n="cards.cicd.title">CI/CD e QA Gates</h3>
+          <p data-i18n="cards.cicd.text">Integração com pipelines, testes por PR, ambientes efêmeros e métricas de qualidade.</p>
         </article>
         <article class="card reveal">
-          <h3>E2E Strategy</h3>
-          <p>Estratégia de testes, pirâmide de testes, análise de risco e cobertura com ROI.</p>
+          <h3 data-i18n="cards.strategy.title">E2E Strategy</h3>
+          <p data-i18n="cards.strategy.text">Estratégia de testes, pirâmide de testes, análise de risco e cobertura com ROI.</p>
         </article>
         <article class="card reveal">
-          <h3>Performance</h3>
-          <p>Testes de carga e stress com análise de gargalos e SLOs. k6, JMeter.</p>
+          <h3 data-i18n="cards.performance.title">Performance</h3>
+          <p data-i18n="cards.performance.text">Testes de carga e stress com análise de gargalos e SLOs. k6, JMeter.</p>
         </article>
         <article class="card reveal">
-          <h3>Observability</h3>
-          <p>Quality in Production: logs, métricas, tracing e alertas orientados à experiência do usuário.</p>
+          <h3 data-i18n="cards.observability.title">Observability</h3>
+          <p data-i18n="cards.observability.text">Quality in Production: logs, métricas, tracing e alertas orientados à experiência do usuário.</p>
         </article>
       </div>
     </section>
 
     <section id="projetos" class="section section--padded page" data-page="projetos" aria-label="Projetos e Resultados">
-      <h2 class="section__title">Projetos e Resultados</h2>
+      <h2 class="section__title" data-i18n="sections.projects">Projetos e Resultados</h2>
       <div class="grid">
         <article class="card reveal">
-          <h3>Pipeline de Qualidade</h3>
-          <p>Redução de 40% no tempo de feedback com paralelização e testes por PR.</p>
+          <h3 data-i18n="projects.pipeline.title">Pipeline de Qualidade</h3>
+          <p data-i18n="projects.pipeline.text">Redução de 40% no tempo de feedback com paralelização e testes por PR.</p>
         </article>
         <article class="card reveal">
-          <h3>Suite E2E Confiável</h3>
-          <p>Queda de 70% em flakiness com estabilização, mocks e dados determinísticos.</p>
+          <h3 data-i18n="projects.e2e.title">Suite E2E Confiável</h3>
+          <p data-i18n="projects.e2e.text">Queda de 70% em flakiness com estabilização, mocks e dados determinísticos.</p>
         </article>
         <article class="card reveal">
-          <h3>API Testing</h3>
-          <p>Detecção precoce de regressões com contratos, testes de erro e monitoração em produção.</p>
+          <h3 data-i18n="projects.api.title">API Testing</h3>
+          <p data-i18n="projects.api.text">Detecção precoce de regressões com contratos, testes de erro e monitoração em produção.</p>
         </article>
       </div>
     </section>
 
     <section id="contato" class="section section--padded page" data-page="contato" aria-label="Contato">
-      <h2 class="section__title">Vamos conversar</h2>
-      <p class="muted">Entre em contato para falarmos sobre qualidade, automação e como elevar a confiança na entrega.</p>
+      <h2 class="section__title" data-i18n="sections.contact">Vamos conversar</h2>
+      <p class="muted" data-i18n="contact.paragraph">Entre em contato para falarmos sobre qualidade, automação e como elevar a confiança na entrega.</p>
       <div class="cta-row">
         <a class="button button--primary" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="button button--ghost" href="mailto:" aria-label="Enviar email">Email</a>
@@ -101,6 +94,7 @@
     <p>© <span id="year"></span> Gabriel Reinisch Faleiro — QA Engineer</p>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script type="module" src="menu.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

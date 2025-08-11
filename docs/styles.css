@@ -79,6 +79,27 @@ body{
   font-weight: 800;
 }
 
+/* botão de idioma no nav */
+.lang-switch{
+  margin-left: 16px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, box-shadow .2s ease;
+}
+.lang-switch:hover{
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 0 1px var(--white-glow-2), 0 6px 20px -12px var(--white-glow-3);
+}
+.lang-switch:active{ font-weight: 800; }
+
 /* main com respiro para header/footer fixos */
 main{ position: relative; z-index: 1; padding-top: var(--header-h); padding-bottom: var(--footer-h); }
 
