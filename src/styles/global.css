@@ -59,6 +59,10 @@ body{
   color: var(--text); text-decoration: none; font-weight: 700;
   text-shadow: 0 0 6px var(--white-glow-2);
 }
+.nav{
+  display: flex;
+  align-items: center;
+}
 .nav a{
   color: var(--text);
   text-decoration: none;
@@ -66,6 +70,7 @@ body{
   padding: 6px 10px;
   border-radius: 7px;
   transition: background .2s ease, color .2s ease, box-shadow .2s ease;
+  cursor: pointer;
 }
 
 .nav a:hover{
@@ -76,6 +81,10 @@ body{
 }
 
 .nav a:active{
+  font-weight: 800;
+}
+
+.nav a.active{
   font-weight: 800;
 }
 
@@ -168,6 +177,7 @@ main{ position: relative; z-index: 1; padding-top: var(--header-h); padding-bott
   color: var(--text); text-decoration: none; font-weight: 600;
   box-shadow: 0 0 0 1px var(--border), 0 10px 32px -18px var(--white-glow-3);
   transition: background .25s ease, color .25s ease, box-shadow .25s ease, transform .25s ease;
+  cursor: pointer;
 }
 .button--primary{
   background: #0f0f0f;
@@ -200,11 +210,12 @@ main{ position: relative; z-index: 1; padding-top: var(--header-h); padding-bott
   text-shadow: 0 0 8px var(--white-glow-1);
 }
 
-/* páginas SPA */
-.page{ display: none; }
-.page.page--active{ display: block; }
-
 /* Accessibility */
 :focus-visible{
   outline: 2px solid var(--focus); outline-offset: 2px;
+}
+
+/* CTA Row */
+.cta-row{
+  display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
 }
